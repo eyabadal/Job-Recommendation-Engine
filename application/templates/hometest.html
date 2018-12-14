@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+
+
+
+
+
+<body>
+<style type="text/css">
+
+
+
+
+
+body{
+
+  color: black;
+}
+
+
+
+
+table, th, td {
+
+ border-collapse: collapse;
+  width: 100%;
+
+
+}
+
+
+td{
+   text-align: left;
+}
+
+
+th{
+
+   text-align: center;
+}
+
+
+th,td{
+
+
+  padding: 2px;
+}
+
+
+
+th{
+
+  background-color: SkyBlue;
+  color: white;
+
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+
+
+
+
+.column {
+    float: left;
+    width:60%;
+    padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+
+
+/* ********************* Container Layout ************************ */
+
+* {
+    box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+</style>
+
+
+
+
+<!-- 
+Returning in table Format 
+
+<h1>{{choice}}</h1>
+<h1>{{skillNameTest}}</h1>
+<h1>{{skillName}}</h1>
+<h1>{{nv}}</h1>
+<h1>{{result_style}}</h1>
+<h1>{{count_vertex}}</h1>
+
+
+<h1>{{a}}</h1>
+-->
+
+
+
+
+
+
+
+
+
+<div class="row">
+
+  
+    <div class="column">
+
+ <img src="/image" alt="" style="width:100%";>
+<!-- Returning in table Format -->
+
+</div>
+  <div class="column">
+<table style="width:100%">
+    <tr>
+        <th>{{choice}} --- city: {{city}}</th>
+        <th>Weights</th>
+    </tr>
+    {% for key, values in dict_weighted_skills_by_job_ad1.items() %}
+    <tr>
+        <td>{{key}}</td>
+        <td> {{values}} </td>
+      
+     </tr>
+    {% endfor %}
+
+</table>
+</div>
+
+
+
+</div>
+
+</br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

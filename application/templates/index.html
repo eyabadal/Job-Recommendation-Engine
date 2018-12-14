@@ -1,0 +1,292 @@
+
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<style>
+body,h1 {font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+.bgimg {
+    background-image: url('http://www.iwebnext.com/blog_image/410119501Website-Design-Background.jpg');
+    min-height: 120%;
+    background-position: center;
+    background-size: cover;
+}
+
+body {
+    font-family: Arial;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+
+#selectBar{
+  
+  border-color: transparent;
+
+ text-align-last:center;
+  background-color: transparent;
+color: white;
+
+
+}
+
+
+#button,#button1 {
+  
+    background: white;
+     border-radius: 100px;
+    background: rgba(0,139,139, 0.5);
+    color:white;
+
+}
+
+
+
+form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+
+
+.navbar{
+
+  margin-left: 15px;
+}
+
+.in{
+
+       border-radius: 100px;
+       text-align: center;
+       
+
+}
+
+
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(100, 155, 150, 0.3);
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color:green;
+}
+
+.active {
+    background-color: rgba(0, 200, 255, 0.3);
+}
+
+
+
+
+
+
+</style>
+
+
+
+
+<body>
+
+
+
+
+
+
+<!-- ******************** Menu section Done ********************** -->
+
+
+<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+  <div class="w3-display-topleft w3-padding-large w3-xlarge">
+    Bitn!ne
+  </div>
+<ul>
+  <li><a class="active" href="{{ url_for('login') }}">Login</a></li>
+  <li><a href="https://bitnine.net/blog/">Blog</a></li>
+  <li><a href="https://bitnine.net/contact/">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+ <div class="w3-display-middle">
+
+<!--
+<form name= "search" action="" method="post" class="example">
+  <input type="text" placeholder="Search for job" name="searchbox">
+<input id="button1" type="submit" value="">
+</form>
+    <hr class="w3-border-grey" style="margin:auto;width:40%">
+
+-->
+
+<form name= "search skills" action="" method="post" class="example">
+
+<select name="choice" id="selectBar">
+     <option value="skill"> Select Search Options</option>
+   <option value="skill">Skill</option>
+  <option value="job">Job</option>
+   <option value="supplement">Supplement</option>
+</select>
+
+
+<select name="stateChoice" id="selectBar">
+  <option class = "logo" value="volvo">Select State</option>
+  <option value="AL">AL</option>
+  <option value="AK">AK</option>
+  <option value="AZ">AZ</option>  
+  <option value="AR">AR</option>
+  <option value="CA">CA</option>
+  <option value="CO">CO</option>
+  <option value="CT">CT</option>
+  <option value="DE">DE</option>
+  <option value="FL">FL</option>
+  <option value="GA">GA</option>
+  <option value="HI">HI</option>
+  <option value="ID">ID</option>
+  <option value="IL">IL</option>
+  <option value="IN">IN</option>
+  <option value="IA">IA</option>
+  <option value="KS">KS</option>
+  <option value="KY">KY</option>
+  <option value="LA">LA</option>
+  <option value="ME">ME</option>
+  <option value="MD">MD</option>
+  <option value="MA">MA</option>
+  <option value="MI">MI</option>
+  <option value="MN">MN</option>
+  <option value="MS">MS</option>
+  <option value="MO">MO</option>
+  <option value="MT">MT</option>
+  <option value="NE">NE</option>
+  <option value="NV">NV</option>
+  <option value="NH">NH</option>
+  <option value="NJ">NJ</option>
+  <option value="NM">NM</option>
+  <option value="NY">NY</option>
+  <option value="NC">NC</option>
+  <option value="ND">ND</option>
+  <option value="OH">OH</option>
+  <option value="OK">OK</option>
+  <option value="OR">OR</option>
+  <option value="PA">PA</option>
+  <option value="RI">RI</option>
+  <option value="SC">SC</option>
+  <option value="SD">SD</option>
+  <option value="TN">TN</option>
+  <option value="TX">TX</option>
+  <option value="UT">UT</option>
+  <option value="VT">VT</option>
+  <option value="VA">VA</option>
+  <option value="WA">WA</option>
+  <option value="WV">WV</option>
+  <option value="WI">WI</option>
+  <option value="WY">WY</option>
+</select>
+
+
+</br>
+  <input class="in" type="text" placeholder="Enter Job " name="searchskillbox">
+
+
+    <input class="in" type="text" placeholder="Enter City" name="city" >
+
+
+<input id="button" type="submit" value="Go">
+
+
+</form>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<!--
+<form name="search" action="" method="post">
+Job Title: <input type="text" name="searchbox">
+<input type="submit" value="Submit">
+</form> -->
+
+<!-- returing all the data-->
+
+
+
+<!-- returing all job classes
+
+<p>{{rs}}</p>
+-->
+
+
+<!-- returing person age
+<p> {{ paragraph}}</p>
+<p>{{name}} </p>
+
+<p>{{num_supplements_for_job_class}} </p>
+<p>{{result}} </p>
+<p>{{v}} </p>
+<p>{{status}} </p>
+<p>{{job_title}} </p>
+
+<p>{{v}}</p>
+
+<p>{{dict_weighted_skills_by_job_ad}}</p>     <p>{{h}}</p>  -->
+
+
+
+
+
+
+<!-- Returning in table Format -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
